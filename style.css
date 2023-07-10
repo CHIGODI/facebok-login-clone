@@ -1,20 +1,31 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 #header{
     text-align: center;
-    font-size: 64px;
+    font-size: 48px;
     color: #1877f2;
-    
+    margin-bottom: 10px; 
 }
+
 #container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 40px;
 
 }
 .form{
@@ -26,7 +37,7 @@
     height: 100%;
     border-radius: 8px;
     padding: 16px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .form input{
     padding:16px;
@@ -34,12 +45,13 @@
     border-radius: 8px;
     margin-bottom: 12px;
     font-size: 16px;
-    border: 1px solid #F6F5F5;
+    border: 1px solid #ece7e7;
+    outline: none;
     justify-content:center ;
 }
 .form p{
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 18px;
     color: #181823;
 }
@@ -54,7 +66,11 @@
    color: white;
    background-color: #1877f2;
    font-weight: 800;
+   cursor: pointer;
     
+}
+.btn :hover{
+    background-color: #1676f5;
 }
 
 .form a{
@@ -62,14 +78,19 @@
 }
 
 .links{
+    margin-top: 20px;
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .links a{
     margin-right: 8px;
     text-decoration: none;
     color:#1877f2 ;
-    font-size: 16px;
+    font-size: 14px;
+}
+.links a:hover{
+    text-decoration: underline;
 }
